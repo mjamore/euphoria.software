@@ -1,91 +1,62 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import cn from "classnames";
+import styles from "./page.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+import ServiceOffering from "@/components/ServiceOffering";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={cn(styles.main, inter.className)}>
+      <div className="flex items-center">
+        <div className="flex flex-col text-center">
+          <h1 className="text-3xl font-bold mb-4">Euphoria Software</h1>
+          <h2 className="text-xl font-bold mb-2">You Dream It, We Build It</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            expedita incidunt dolorem! Necessitatibus laboriosam possimus vitae
+            beatae laudantium amet iusto vel, dignissimos dolore veniam, sed, a
+            in accusamus? Facere, porro.
+          </p>
         </div>
+        <video src="mac-morph.mp4" autoPlay loop muted playsInline />
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div className="flex">
+        <ServiceOffering
+          name="Create Engaging Websites"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea atque rem, pariatur, doloribus voluptatibus, assumenda numquam eius voluptate unde odit? Dignissimos neque minima doloremque facere libero earum quidem nulla!"
+          buttonText="Help me build my website!"
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
+        <ServiceOffering
+          name="Mobile Application Development"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea atque rem, pariatur, doloribus voluptatibus, assumenda numquam eius voluptate unde odit? Dignissimos neque minima doloremque facere libero earum quidem nulla!"
+          buttonText="Help me build my mobile app!"
+        />
+        <ServiceOffering
+          name="AI Tool Integration"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea atque rem, pariatur, doloribus voluptatibus, assumenda numquam eius voluptate unde odit? Dignissimos neque minima doloremque facere libero earum quidem nulla!"
+          buttonText="Help me integrate AI into my app!"
+        />
+        <ServiceOffering
+          name="Software Consulting"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea atque rem, pariatur, doloribus voluptatibus, assumenda numquam eius voluptate unde odit? Dignissimos neque minima doloremque facere libero earum quidem nulla!"
+          buttonText="Help me improve my software engineering practices!"
+        />
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="bg-blue-500 p-8">
+        <h4 className="mb-6">Let&apos;s Work Together</h4>
+        <form className="flex flex-col">
+          <label htmlFor="email">Your Email Address</label>
+          <input type="email" id="email" name="email" />
+          <label htmlFor="comments">Comments</label>
+          <textarea id="comments" name="comments" />
+          <button type="submit">Contact</button>
+        </form>
       </div>
     </main>
-  )
+  );
 }

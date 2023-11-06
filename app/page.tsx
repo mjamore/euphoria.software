@@ -25,17 +25,14 @@ export default function HomePage() {
             <polyline points='16 18 22 12 16 6' />
             <polyline points='8 6 2 12 8 18' />
           </svg>
-          <span className='ml-3 text-xl font-semibold text-white'>DevCompany</span>
+          <span className='ml-3 text-xl font-semibold text-white'>Euphoria Software</span>
         </div>
         <nav className='space-x-4'>
           <Link className='text-gray-200 hover:text-blue-400' href='#'>
-            Home
+            Projects
           </Link>
           <Link className='text-gray-200 hover:text-blue-400' href='#'>
-            Services
-          </Link>
-          <Link className='text-gray-200 hover:text-blue-400' href='#'>
-            About Us
+            About
           </Link>
           <Link className='text-gray-200 hover:text-blue-400' href='#'>
             Contact
@@ -44,14 +41,11 @@ export default function HomePage() {
       </header>
       <main className='flex-grow'>
         <section className='py-20 px-6 text-center'>
-          <h1 className='text-5xl font-bold text-white'>Welcome to DevCompany</h1>
-          <p className='mt-4 text-lg text-gray-300'>We provide high quality software development services.</p>
-          <Button className='mt-6 px-8 py-3 rounded bg-blue-500 text-white' variant='default'>
-            Get Started
-          </Button>
+          <h1 className='text-5xl font-bold text-white'>Euphoria Software</h1>
+          <p className='mt-4 text-lg text-gray-300'>Having fun building things for the web</p>
         </section>
         <section className='py-20 px-6 bg-gray-900'>
-          <h2 className='text-4xl font-bold text-center text-white'>Our Services</h2>
+          <h2 className='text-4xl font-bold text-center text-white'>Projects</h2>
           <div className='mt-10 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
             <div className='flex flex-col items-center text-center'>
               <svg
@@ -136,16 +130,8 @@ export default function HomePage() {
         </section>
       </main>
       <footer className='w-full py-6 px-6 bg-gray-800 shadow'>
-        <div className='flex justify-between items-center'>
-          <span className='text-gray-300'>© 2023 DevCompany</span>
-          <nav className='space-x-4'>
-            <Link className='text-gray-300 hover:text-blue-400' href='#'>
-              Terms of Service
-            </Link>
-            <Link className='text-gray-300 hover:text-blue-400' href='#'>
-              Privacy Policy
-            </Link>
-          </nav>
+        <div className='flex justify-center items-center'>
+          <p className='text-gray-300'>© {new Date().getFullYear()} Euphoria Software LLC</p>
         </div>
       </footer>
     </div>

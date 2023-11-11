@@ -42,11 +42,11 @@ export default function HomePage() {
       </header>
       <main className='flex-grow'>
         <section className='py-36 px-6 text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
-          <h1 className='text-3xl sm:text-5xl mb-12 font-bold text-white [text-shadow:_2px_2px_2px_rgb(0_0_0_/_100%)]'>Euphoria Software</h1>
+          <h1 className='text-3xl sm:text-5xl mb-12 font-bold text-white/75 [text-shadow:_2px_2px_2px_rgb(0_0_0_/_100%)]'>Euphoria Software</h1>
           <h2 className='mt-4 text-xl sm:text-2xl text-black'>Having fun building for the web</h2>
         </section>
         <section className='py-20 px-6 bg-gray-900'>
-          <h2 className='text-4xl mb-20 font-bold text-center text-white'>Projects</h2>
+          <h2 className='text-4xl mb-20 font-bold text-center text-white/75'>Projects</h2>
           <div className='gap-20 flex flex-col md:flex-row justify-evenly items-center'>
             <a className='flex flex-col items-center text-center rounded-lg p-1' href='https://popularbelief.info' target='_blank'>
               <Image alt='Popular Belief' className='mb-6 rounded-lg' height={100} src='/popular-belief-logo.png' width={100} />
@@ -62,21 +62,21 @@ export default function HomePage() {
           </div>
         </section>
         <section className='py-20 px-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
-          <h2 className='text-4xl font-bold text-center text-white'>Let&apos;s Connect</h2>
-          <div className='mt-10 max-w-md mx-auto bg-gray-700 rounded-lg shadow-lg overflow-hidden'>
+          <h2 className='text-4xl font-bold text-center text-white/75'>Let&apos;s Connect</h2>
+          <div className='mt-10 max-w-md mx-auto bg-white/10 rounded-lg shadow-lg overflow-hidden'>
             <form className='space-y-6 p-6 backdrop-blur-lg'>
               <input
                 aria-label='Email Address'
-                className='w-full px-4 py-3 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
+                className='w-full px-4 py-3 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
                 placeholder='Email Address'
                 type='email'
               />
               <textarea
                 aria-label='Message'
-                className='w-full px-4 py-3 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
+                className='w-full px-4 py-3 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
                 placeholder='Message'
               />
-              <Button className='w-full px-8 py-3 rounded bg-white hover:bg-gray-300 text-black' type='submit' variant='default'>
+              <Button className='w-full px-8 py-3 rounded bg-white hover:bg-gray-200 text-black' type='submit' variant='default'>
                 Submit
               </Button>
             </form>

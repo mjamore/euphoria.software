@@ -1,3 +1,3 @@
 # TODO:
 
-- [ ] remove used imports on save
+- [ ] remove unused imports on save

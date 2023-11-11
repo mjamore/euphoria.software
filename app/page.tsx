@@ -10,9 +10,9 @@ export default function HomePage() {
   return (
     <div className='flex flex-col min-h-screen bg-gray-800'>
       <header className='w-full px-6 py-4 flex justify-between items-center bg-gray-800 shadow'>
-        <div className='flex items-center'>
+        <a className='flex items-center' href='/'>
           <svg
-            className=' h-8 w-8 text-blue-300'
+            className='h-8 w-8 text-blue-300'
             fill='none'
             height='24'
             stroke='currentColor'
@@ -26,8 +26,8 @@ export default function HomePage() {
             <polyline points='16 18 22 12 16 6' />
             <polyline points='8 6 2 12 8 18' />
           </svg>
-          <span className='ml-3 text-xl font-semibold text-white'>Euphoria Software</span>
-        </div>
+          <span className='hidden md:inline ml-3 text-xl font-semibold text-white'>Euphoria Software</span>
+        </a>
         <nav className='space-x-4'>
           <Link className='text-gray-200 hover:text-blue-400' target='_blank' href='https://popularbelief.info'>
             popularbelief.info
@@ -35,19 +35,19 @@ export default function HomePage() {
           <Link className='text-gray-200 hover:text-blue-400' target='_blank' href='https://codewithlove.blog'>
             codewithlove.blog
           </Link>
-          <Link className='text-gray-200 hover:text-blue-400' href='#'>
+          <Link className='hidden sm:inline text-gray-200 hover:text-blue-400' href='#'>
             Contact
           </Link>
         </nav>
       </header>
       <main className='flex-grow'>
-        <section className='py-20 px-6 text-center'>
-          <h1 className='text-5xl font-bold text-white'>Euphoria Software</h1>
-          <p className='mt-4 text-lg text-gray-300'>Having fun building for the web</p>
+        <section className='my-36 px-6 text-center'>
+          <h1 className='text-3xl sm:text-5xl mb-12 font-bold text-white'>Euphoria Software</h1>
+          <h2 className='mt-4 text-xl sm:text-2xl text-gray-300'>Having fun building for the web</h2>
         </section>
         <section className='py-20 px-6 bg-gray-900'>
-          <h2 className='text-4xl font-bold text-center text-white'>Projects</h2>
-          <div className='mt-10 gap-20 flex flex-col md:flex-row justify-evenly items-center'>
+          <h2 className='text-4xl mb-20 font-bold text-center text-white'>Projects</h2>
+          <div className='gap-20 flex flex-col md:flex-row justify-evenly items-center'>
             <a className='flex flex-col items-center text-center rounded-lg p-1' href='https://popularbelief.info' target='_blank'>
               <Image alt='Popular Belief' className='mb-6 rounded-lg' height={100} src='/popular-belief-logo.png' width={100} />
               <h3 className='text-2xl font-semibold text-white'>popularbelief.info</h3>

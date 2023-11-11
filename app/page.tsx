@@ -41,9 +41,9 @@ export default function HomePage() {
         </nav>
       </header>
       <main className='flex-grow'>
-        <section className='my-36 px-6 text-center'>
-          <h1 className='text-3xl sm:text-5xl mb-12 font-bold text-white'>Euphoria Software</h1>
-          <h2 className='mt-4 text-xl sm:text-2xl text-gray-300'>Having fun building for the web</h2>
+        <section className='py-36 px-6 text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
+          <h1 className='text-3xl sm:text-5xl mb-12 font-bold text-white [text-shadow:_2px_2px_2px_rgb(0_0_0_/_100%)]'>Euphoria Software</h1>
+          <h2 className='mt-4 text-xl sm:text-2xl text-black'>Having fun building for the web</h2>
         </section>
         <section className='py-20 px-6 bg-gray-900'>
           <h2 className='text-4xl mb-20 font-bold text-center text-white'>Projects</h2>
@@ -61,22 +61,22 @@ export default function HomePage() {
             </a>
           </div>
         </section>
-        <section className='py-20 px-6 bg-gray-800'>
+        <section className='py-20 px-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
           <h2 className='text-4xl font-bold text-center text-white'>Let&apos;s Connect</h2>
           <div className='mt-10 max-w-md mx-auto bg-gray-700 rounded-lg shadow-lg overflow-hidden'>
-            <form className='space-y-6 p-6'>
+            <form className='space-y-6 p-6 backdrop-blur-lg'>
               <input
                 aria-label='Email Address'
-                className='w-full px-4 py-3 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-100 bg-gray-700'
+                className='w-full px-4 py-3 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
                 placeholder='Email Address'
                 type='email'
               />
               <textarea
                 aria-label='Message'
-                className='w-full px-4 py-3 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-100 bg-gray-700'
+                className='w-full px-4 py-3 rounded border focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-black bg-white'
                 placeholder='Message'
               />
-              <Button className='w-full px-8 py-3 rounded bg-blue-500 text-white' type='submit' variant='default'>
+              <Button className='w-full px-8 py-3 rounded bg-white hover:bg-gray-300 text-black' type='submit' variant='default'>
                 Submit
               </Button>
             </form>

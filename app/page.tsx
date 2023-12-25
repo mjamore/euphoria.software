@@ -29,13 +29,10 @@ export default function HomePage() {
           <span className='hidden md:inline ml-3 text-xl font-semibold text-white'>Euphoria Software</span>
         </a>
         <nav className='space-x-4'>
-          <Link className='text-gray-200 hover:text-blue-400' target='_blank' href='https://popularbelief.info'>
-            popularbelief.info
+          <Link className='text-gray-200 hover:text-blue-400 p-6' href='#projects'>
+            Projects
           </Link>
-          <Link className='text-gray-200 hover:text-blue-400' target='_blank' href='https://codewithlove.blog'>
-            codewithlove.blog
-          </Link>
-          <Link className='hidden sm:inline text-gray-200 hover:text-blue-400' href='#'>
+          <Link className='hidden sm:inline text-gray-200 hover:text-blue-400 p-6' href='#'>
             Contact
           </Link>
         </nav>
@@ -46,7 +43,9 @@ export default function HomePage() {
           <h2 className='mt-4 text-xl sm:text-2xl text-black'>Having fun building for the web</h2>
         </section>
         <section className='py-20 px-6 bg-gray-900'>
-          <h2 className='text-4xl mb-20 font-bold text-center text-white/75'>Projects</h2>
+          <h2 id='projects' className='text-4xl mb-20 font-bold text-center text-white/75'>
+            Projects
+          </h2>
           <div className='gap-20 flex flex-col md:flex-row justify-evenly items-center'>
             <a className='flex flex-col items-center text-center rounded-lg p-1' href='https://popularbelief.info' target='_blank'>
               <Image alt='Popular Belief' className='mb-6 rounded-lg' height={100} src='/popular-belief-logo.png' width={100} />
@@ -54,15 +53,24 @@ export default function HomePage() {
               <p className='mt-2 text-gray-400'>What Do People Really Believe?</p>
               <p className='mt-2 text-gray-400'>Now you can find out!</p>
             </a>
+            <a className='flex flex-col items-center text-center rounded-lg p-1' href='https://spicytakes.app' target='_blank'>
+              <p className='text-8xl h-[100px] mb-6'>🌶️</p>
+              <h3 className='text-2xl font-semibold text-white'>SpicyTakes</h3>
+              <p className='mt-2 text-gray-400'>Share your spicy takes. Vote on how spicy other takes are.</p>
+              <p className='mt-2 text-gray-400'>Inspired by the FML app from the early 2010's.</p>
+            </a>
             <a className='flex flex-col items-center text-center rounded-lg p-1' href='https://codewithlove.blog' target='_blank'>
               <Image alt='Popular Belief' className='mb-6 rounded-lg' height={100} src='/code-with-love-logo.png' width={100} />
               <h3 className='text-2xl font-semibold text-white'>codewithlove.blog</h3>
               <p className='mt-2 text-gray-400'>Follow my journey as a software engineer.</p>
+              <p className='mt-2 text-gray-400'>
+                There's got to be <span className='italic'>something</span> valuable there.
+              </p>
             </a>
           </div>
         </section>
         <section className='py-20 px-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
-          <h2 className='text-4xl font-bold text-center text-white/75'>Let&apos;s Connect</h2>
+          <h2 className='text-4xl font-bold text-center text-white/75'>Let&apos;s Work Together</h2>
           <div className='mt-10 max-w-md mx-auto bg-white/10 rounded-lg shadow-lg overflow-hidden'>
             <form className='space-y-6 p-6 backdrop-blur-lg'>
               <input
@@ -85,7 +93,12 @@ export default function HomePage() {
       </main>
       <footer className='w-full py-6 px-6 bg-gray-800 shadow'>
         <div className='flex justify-center items-center'>
-          <p className='text-gray-300'>© {new Date().getFullYear()} Euphoria Software LLC</p>
+          <p className='text-gray-300'>
+            © {new Date().getFullYear()} Euphoria Software LLC &#x2022;{' '}
+            <a href='https://twitter.com/amore_codes' target='_blank' className='inline-block'>
+              <Image alt='X Logo' height={15} src='/x-logo.png' width={15} />
+            </a>
+          </p>
         </div>
       </footer>
     </div>
